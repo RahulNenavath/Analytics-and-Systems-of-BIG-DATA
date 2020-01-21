@@ -14,9 +14,16 @@ df4 = pd.DataFrame(data)
 
 sns.regplot(x='Mass', y='Fuel', data=df4)
 
+#plt.show()
+
+
 correlation = df4.corr()
 
 print(correlation)
+
+sns.heatmap(correlation, 
+         xticklabels=correlation.columns, 
+         yticklabels=correlation.columns)
 
 plt.show()
 

@@ -11,6 +11,7 @@ df4 = pd.DataFrame(data)
 
 sns.boxplot(df4['Height']) # Box plot for 5 point sumary of data
 
+
 df4.describe() # For Summary Stats
 
 mean = df4['Height'].mean()
